@@ -5,7 +5,7 @@
 ------------------------------------
 local player = "Player"  --Change player to the player you wanna kick
 
-game.PlayerAdded:Connect(function(plr)
+game.Players.PlayerAdded:Connect(function(plr)
         if plr.Name == player then
             plr:Kick()
 end
